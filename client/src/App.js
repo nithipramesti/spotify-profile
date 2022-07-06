@@ -48,10 +48,10 @@ function App() {
             <StyledLogoutButton onClick={logout}>Log Out</StyledLogoutButton>
             <BrowserRouter>
               <Routes>
-                <Route path="/top-artist" element={<h1>Top Artist</h1>} />
+                <Route path="/top-artists" element={<h1>Top Artists</h1>} />
                 <Route path="/top-tracks" element={<h1>Top Tracks</h1>} />
                 <Route path="/playlists/:id" element={<h1>Playlist</h1>} />
-                <Route path="/playlists" element={<h1>Playlist</h1>} />
+                <Route path="/playlists" element={<h1>Playlists</h1>} />
                 <Route path="/" element={<Profile />} />
               </Routes>
             </BrowserRouter>
