@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { accessToken, logout, getCurrentUserProfile } from "./spotify";
 import { catchErrors } from "./utils";
-import { Login, Profile } from "./pages";
+import { Login, Profile, TopArtists, TopTracks } from "./pages";
 import { GlobalStyle } from "./styles";
 import styled from "styled-components/macro";
 
@@ -48,8 +48,8 @@ function App() {
             <StyledLogoutButton onClick={logout}>Log Out</StyledLogoutButton>
             <BrowserRouter>
               <Routes>
-                <Route path="/top-artists" element={<h1>Top Artists</h1>} />
-                <Route path="/top-tracks" element={<h1>Top Tracks</h1>} />
+                <Route path="/top-artists" element={<TopArtists />} />
+                <Route path="/top-tracks" element={<TopTracks />} />
                 <Route path="/playlists/:id" element={<h1>Playlist</h1>} />
                 <Route path="/playlists" element={<h1>Playlists</h1>} />
                 <Route path="/" element={<Profile />} />

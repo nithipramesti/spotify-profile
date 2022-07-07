@@ -28,10 +28,10 @@ const TrackList = ({ tracks }) => (
                 </div>
               </div>
             </div>
-            <div className="track__item___album overflow-ellipsis">
+            <div className="track__item__album overflow-ellipsis">
               {track.album.name}
             </div>
-            <div className="track__item___duration">
+            <div className="track__item__duration">
               {formatDuration(track.duration_ms)}
             </div>
           </li>
