@@ -2,7 +2,14 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { accessToken, logout, getCurrentUserProfile } from "./spotify";
 import { catchErrors } from "./utils";
-import { Login, Playlist, Profile, TopArtists, TopTracks } from "./pages";
+import {
+  Login,
+  Playlists,
+  Playlist,
+  Profile,
+  TopArtists,
+  TopTracks,
+} from "./pages";
 import { GlobalStyle } from "./styles";
 import styled from "styled-components/macro";
 
@@ -51,7 +58,7 @@ function App() {
                 <Route path="/top-artists" element={<TopArtists />} />
                 <Route path="/top-tracks" element={<TopTracks />} />
                 <Route path="/playlists/:id" element={<Playlist />} />
-                <Route path="/playlists" element={<Playlist />} />
+                <Route path="/playlists" element={<Playlists />} />
                 <Route path="/" element={<Profile />} />
               </Routes>
             </BrowserRouter>

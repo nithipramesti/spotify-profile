@@ -23,8 +23,6 @@ const Playlist = () => {
       return;
     }
 
-    console.log(playlistsData.next);
-
     const fetchMoreData = async () => {
       if (playlistsData.next) {
         const { data } = await axios.get(playlistsData.next);
