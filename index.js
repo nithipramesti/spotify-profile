@@ -11,7 +11,7 @@ const REDIRECT_URI = process.env.REDIRECT_URI;
 
 app.get("/", (req, res) => {
   const data = {
-    name: "Monkey D. Luffy",
+    name: "Welcome to the backend of spotify profile - Nithi",
     isHappy: true,
   };
 

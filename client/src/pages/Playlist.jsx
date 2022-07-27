@@ -2,7 +2,7 @@ import axios from "axios";
 import { useMemo } from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { SectionWrapper, TrackList } from "../components";
+import { Loader, SectionWrapper, TrackList } from "../components";
 import { getAudioFeaturesFroTracks, getPlaylistId } from "../spotify";
 import { StyledDropdown, StyledHeader } from "../styles";
 import { catchErrors } from "../utils";
@@ -156,7 +156,7 @@ const Playlist = () => {
                 </select>
               </StyledDropdown>
 
-              {sortedTracks && <TrackList tracks={sortedTracks} />}
+              {sortedTracks ? <TrackList tracks={sortedTracks} /> : <Loader />}
             </SectionWrapper>
           </main>
         </>

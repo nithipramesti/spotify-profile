@@ -40,9 +40,9 @@ const StyledHeader = styled.header`
   }
 
   img.header__img {
+    object-fit: cover;
     width: 20%;
-    max-width: 250px;
-    min-width: 120px;
+    aspect-ratio: 1 / 1;
     margin-right: var(--spacing-lg);
     box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
     background-color: var(--dark-grey);
