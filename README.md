@@ -52,5 +52,5 @@ End product of the "Build a Spotify Connected App" newline course
 5. Push to Heroku
 
    ```shell
-   git push heroku main
+   git push heroku master
    ```
